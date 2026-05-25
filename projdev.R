@@ -148,3 +148,5 @@ plot_crw <- function(track,
 
 sim <- simulate_crw()
 plot_crw(sim)
+
+
