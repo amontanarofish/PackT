@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# PackT
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+*This is a test package that I am using to work on my tool dev skills
+
+## Installation
+
+You can install the development version of PackT from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("amontanarofish/PackT")
+```
+
+## Example
+
+Basic CRW example with plot showing the nearest point to a set point in space (always 30,50):
+
+```{r example}
+library(PackT)
+sim <- simulate_crw()
+plot_crw(sim)
+```
